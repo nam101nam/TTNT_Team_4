@@ -87,16 +87,17 @@ def chia_du_lieu():
 # Chạy hàm
 #chia_du_lieu()
 
-
+current_dir = os.path.dirname(os.path.abspath(__file__))
+data_root = os.path.join(current_dir, "HumanVisionData")
 # Thay đường dẫn cụ thể vào đây
-train_person = "/home/nam/Documents/TTNT/HumanVision/Data/HumanVisionData/train/person"
-train_no_person = "/home/nam/Documents/TTNT/HumanVision/Data/HumanVisionData/train/no_person"
+train_person = os.path.join(data_root, "train", "person")
+train_no_person = os.path.join(data_root, "train", "no_person")
 
-validation_person = "/home/nam/Documents/TTNT/HumanVision/Data/HumanVisionData/validation/person"
-validation_no_person = "/home/nam/Documents/TTNT/HumanVision/Data/HumanVisionData/validation/no_person"
+validation_person = os.path.join(data_root, "validation", "person")
+validation_no_person = os.path.join(data_root, "validation", "no_person")
 
-test_person = "/home/nam/Documents/TTNT/HumanVision/Data/HumanVisionData/test/person"
-test_no_person = "/home/nam/Documents/TTNT/HumanVision/Data/HumanVisionData/test/no_person"
+test_person = os.path.join(data_root, "test", "person")
+test_no_person = os.path.join(data_root, "test", "no_person")
 
 
 
